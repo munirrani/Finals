@@ -1,5 +1,8 @@
 package com.company;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -85,6 +88,31 @@ public class Year20162017Semester2 {
         displayMinimumNumber();
         displayApproximationToHundred();
         displayInReverseOrder();
+
+        /*
+        Q4
+        In Q4.dat:
+        25/3/2017
+        29/2/2100
+        19/1/2017
+        31/9/2015
+        29/2/2016
+         */
+        String line;
+        String[] values;
+        try {
+            Scanner scanner = new Scanner(new FileInputStream(new File("Q4.dat")));
+            while (scanner.hasNextLine()) {
+                line = scanner.nextLine();
+                values = line.split("/");
+                DayOfTheWeek dayOfTheWeek = new DayOfTheWeek(
+                        Integer.valueOf(values[0]), Integer.valueOf(values[1]), Integer.valueOf(values[2])
+                );
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void displayNumbers() {
