@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Year20182019Semester1 {
 
+    /*
+    Note: Just assume the final output is exactly the same as on the question paper. Goodluck!
+     */
+
     Year20182019Semester1() {
 
         /*

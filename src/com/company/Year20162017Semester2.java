@@ -8,6 +8,10 @@ import java.util.Scanner;
 
 public class Year20162017Semester2 {
 
+    /*
+    Note: Just assume the final output is exactly the same as on the question paper. Goodluck!
+     */
+
     // Q3 variables
     static int n;
     static int[] numbers;
